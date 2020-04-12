@@ -5,6 +5,15 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: []
+  siteMetadata: {
+    title: "PDBTools",
+    menuLinks: [
+      { name: "Home", link: "/" },
+      {
+        name: "page2",
+        link: "/page-2",
+      },
+    ],
+  },
+  plugins: [`gatsby-plugin-react-helmet`],
 }
