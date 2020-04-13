@@ -17,10 +17,9 @@ a:hover {
   color: gray;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin-left: 10px;
   padding: 0;
   font-family: futura-pt, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 .navbar {
@@ -65,7 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 90vw;
   margin: 2rem auto;
   box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.568);
-  padding: 15px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 
