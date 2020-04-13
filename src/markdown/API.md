@@ -16,10 +16,9 @@ PDBTools has its own functions to start computations,compare, and analyze data. 
 |distance_2(*args, **kwargs) | Calculates the disance from an amino acid site to a range of substitution sites |
 |filter_results(*args) | Filters the results returned after the amino acids have been compared. |
 
-## Examples 
 
+first_comparison(*args, **kwargs)
 
-first_comparison(*args, **kwargs) 
 - Compare two amino acid Chains 
 - parameters:  args : object
  -- Data that contains an iterable or list-like objects 
@@ -71,7 +70,7 @@ filter_results(*args)
 - parameters:  args : object
  -- Data that contains an iterable or list-like objects 
 
-
+## Examples
 
 
 
