@@ -1,0 +1,57 @@
+html {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a:hover {
+  color: gray;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+.navbar {
+  box-shadow: 0 8px 4px -6px rgba(119, 119, 119, 0.219);
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.navlinksContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 12vw;
+}
+
+
+.activeLink {
+  background-color: rgba(0, 0, 0, 0.719);
+  padding: 10px;
+  color: white;
+}
+
+.activeLink:hover {
+  color: white
+}
+
+.navlink {
+  margin-right: 5px;
+}
