@@ -23,7 +23,19 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`@pauliescanlon/gatsby-remark-sticky-table`],
+      },
+    },
+    {
+      resolve: `@pauliescanlon/gatsby-remark-sticky-table`,
+      options: {
+        height: 350,
+        backgroundColor: "#ffffff",
+      },
+    },
+    `gatsby-plugin-react-helmet`
   ],
 }
