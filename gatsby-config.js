@@ -26,7 +26,10 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`@pauliescanlon/gatsby-remark-sticky-table`],
+        plugins: [
+          { resolve: `gatsby-remark-images`, options: { maxWidth: 590 } },
+          `@pauliescanlon/gatsby-remark-sticky-table`,
+        ],
       },
     },
     {
@@ -36,6 +39,7 @@ module.exports = {
         backgroundColor: "#ffffff",
       },
     },
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
   ],
 }
