@@ -29,9 +29,12 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-images`,
-            options: { 
-              maxWidth: 550, 
-              wrapperStyle: "margin-right:100px"
+            options: {
+              maxWidth: 1200,
+              linkImagesToOriginal: false,
+              sizeByPixelDensity: false,
+              backgroundColor: "none",
+              wrapperStyle: "border:1px solid red;  margin-left:20px; height:300px; width: 1200px;"
             },
           },
           `@pauliescanlon/gatsby-remark-sticky-table`,
