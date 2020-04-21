@@ -10,7 +10,7 @@ export default function Template({
   return (
     <>
       <Layout />
-        <div className="blog-post-container">
+        <div className="blog-post-container animated fadeInUp slow">
           <div className="blog-post">
             <h1>{frontmatter.title}</h1>
             <h4>Last Updated: {frontmatter.date}</h4>
