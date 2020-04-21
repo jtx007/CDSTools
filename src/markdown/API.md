@@ -17,60 +17,71 @@ PDBTools has its own functions to start computations,compare, and analyze data. 
 |filter_results(*args) | Filters the results returned after the amino acids have been compared. |
 
 
-first_comparison(*args, **kwargs)
+<span class="functionCall"><strong>first_comparison</strong>(*args, **kwargs)</span>
 
-- Compare two amino acid Chains 
-- parameters:  args : object
- -- Data that contains an iterable or list-like objects 
-- kwargs 
--- Extra keywrods to forward to the scheduler function 
+Compare two amino acid Chains 
 
-## Examples 
+<strong>Parameters:</strong> <span class="objectParams">args:object</span>
+<p class="objectParamDef">Data that contains an iterable or list-like objects</p>
+<span class="objectParamDef objectParams">kwargs</span> 
+<p class="objectParamDef">Extra keywords to forward to the scheduler function</p> 
+
+### Examples 
     
     
-second_comparison(*args, **kwargs)
-- Compare two amino acid chains based on the types of amino acids  
-- parameters:  args : object
- -- Data that contains an iterable or list-like objects 
-- kwargs 
--- Extra keywrods to forward to the scheduler function
+<span class="functionCall"><strong>second_comparison</strong>(*args, **kwargs)</span>
 
-## Examples 
+Compare two amino acid chains based on the types of amino acids  
+
+<strong>Parameters:</strong>  <span class="objectParams">args:object</span>
+<p class="objectParamDef">Data that contains an iterable or list-like objects</p>
+<span class="objectParamDef objectParams">kwargs</span> 
+<p class="objectParamDef">Extra keywords to forward to the scheduler function</p>
+
+### Examples 
 
 
-third_comparison(*args, **kwargs)
-- Locates the selected amino acid 
-- parameters:  args : object
- -- Data that contains an iterable or list-like objects 
-- kwargs 
--- Extra keywrods to forward to the scheduler function
+<span class="functionCall"><strong>third_comparison</strong>(*args, **kwargs)</span>
 
-## Examples 
+Locates the selected amino acid 
 
-distance_1(*args, **kwargs)
-- Calculates the distance from one specific amino acid to the substitution site
-- parameters:  args : object
- -- Data that contains an iterable or list-like objects 
-- kwargs 
--- Extra keywords to forward to the scheduler function
+<strong>Parameters</strong>:  <span class="objectParams">args:object</span>
+<p class="objectParamDef">Data that contains an iterable or list-like objects</p>
+<span class="objectParamDef objectParams">kwargs</span> 
+<p class="objectParamDef">Extra keywords to forward to the scheduler function</p>
 
-## Examples 
+### Examples 
 
-distance_2(*args, **kwargs)
-- Calculates the disance from an amino acid site to a range of substitution site
-- parameters:  args : object
- -- Data that contains an iterable or list-like objects 
-- kwargs 
--- Extra keywords to forward to the scheduler function
+<span class="functionCall"><strong>distance_1</strong>(*args, **kwargs)</span>
 
-## Examples
+Calculates the distance from one specific amino acid to the substitution site
 
-filter_results(*args)
-- Filters the results returned after the amino acids have been compared 
-- parameters:  args : object
- -- Data that contains an iterable or list-like objects 
+<strong>Parameters:</strong>  <span class="objectParams">args:object</span>
+<p class="objectParamDef">Data that contains an iterable or list-like objects</p>
+<span class="objectParamDef objectParams">kwargs</span> 
+<p class="objectParamDef">Extra keywords to forward to the scheduler function</p>
 
-## Examples
+### Examples 
+
+<span class="functionCall"><strong>distance_2</strong>(*args, **kwargs)</span>
+
+Calculates the disance from an amino acid site to a range of substitution site
+
+<strong>Parameters:</strong>  <span class="objectParams">args:object</span>
+<p class="objectParamDef">Data that contains an iterable or list-like objects</p>
+<span class="objectParamDef objectParams">kwargs</span> 
+<p class="objectParamDef">Extra keywords to forward to the scheduler function</p>
+
+### Examples
+
+<span class="functionCall"><strong>filter_results</strong>(*args)</span>
+
+Filters the results returned after the amino acids have been compared 
+
+<strong>Parameters:</strong>  <span class="objectParams">args:object</span>
+<p class="objectParamDef">Data that contains an iterable or list-like objects</p>
+
+### Examples
 
 
 

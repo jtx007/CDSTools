@@ -101,3 +101,20 @@ h1, h2, h3, h4, h5, h6 {
 .remark-sticky-table-td {
   padding: 16px;
 }
+
+.functionCall {
+  background-color: #E7F2FA;
+  padding: 7px;
+  border-top: 3px solid #6AB0DE;
+}
+
+.objectParams {
+  background-color: rgb(233, 231, 231);
+  padding: 3px;
+  border-left: 2px solid rgb(158, 155, 155);
+}
+
+.objectParamDef {
+  margin-left: 100px;
+}
+
