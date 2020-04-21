@@ -5,4 +5,3 @@ title: "Home"
 ---
 SOON COME
 
-![alt text](./sans.png)
