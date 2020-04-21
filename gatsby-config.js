@@ -10,7 +10,7 @@ module.exports = {
     menuLinks: [
       { name: "Home", link: "/" },
       {
-        name: "API reference",
+        name: "API Reference",
         link: "/api",
       },
     ],
