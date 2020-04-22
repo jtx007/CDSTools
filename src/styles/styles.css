@@ -2,20 +2,31 @@ html {
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
-  padding: 5px;
+
 }
 
+body{
+    margin:0;
+}
+
+.navLogo {
+  color: #62DAFB;
+}
+
+.navLogo:hover {
+  color: white;
+}
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 a:hover {
-  color: gray;
+  color: #62DAFB;
 }
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
@@ -23,13 +34,23 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
 }
+
+.navbarContainer {
+  border: 1px solid red;
+}
 .navbar {
   box-shadow: 0 8px 4px -6px rgba(119, 119, 119, 0.219);
   display: flex;
   flex-flow: row wrap;
   margin: 0;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
   justify-content: space-between;
   align-items: center;
+  background-color: #20222A;
 }
 
 .navlinksContainer {
@@ -40,12 +61,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin-right: 20px;
   width: 12vw;
+  color: #62DAFB;
 
 }
 
 
 .activeLink {
-  background-color: rgba(0, 0, 0, 0.493);
+  background-color: rgba(60, 73, 149, 0.493);
   padding: 10px;
   color: white;
 }

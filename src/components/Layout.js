@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import {graphql, StaticQuery} from 'gatsby'
 import { Helmet } from "react-helmet"
-
+import '../styles/styles.css'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <React.Fragment>
+      <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
             { name: "keywords", content: "sample, something" },
           ]}
         ></Helmet>
-        <Header
+        <Header className="navbarContainer"
           menuLinks={data.site.siteMetadata.menuLinks}
           siteTitle={data.site.siteMetadata.title}
         />{" "}
@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-      </React.Fragment>
+      </>
     )}
   />
 )

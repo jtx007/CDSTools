@@ -6,22 +6,23 @@ import "../styles/styles.css"
 const Header = ({ siteTitle, menuLinks }) => (
   <div className="navbar">
     <h2>
-      <Link to="/">{siteTitle}</Link>
+      <Link className="navLogo" to="/">
+        {siteTitle}
+      </Link>
     </h2>
-      <nav>
-        <ul className="navlinksContainer">
-          {menuLinks.map(link => (
-            <li className="navlink"
-
-              key={link.name}
-            
-            ><h4>
-              <Link activeClassName="activeLink" to={link.link}>{link.name}</Link>
-              </h4>
-            </li>
-          ))}
-        </ul>
-      </nav>
+    <nav>
+      <ul className="navlinksContainer">
+        {menuLinks.map(link => (
+          <li className="navlink" key={link.name}>
+            <h4>
+              <Link activeClassName="activeLink" to={link.link}>
+                {link.name}
+              </Link>
+            </h4>
+          </li>
+        ))}
+      </ul>
+    </nav>
   </div>
 )
 
