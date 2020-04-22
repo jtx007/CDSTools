@@ -14,7 +14,7 @@ const Api = () => {
   return (
     <>
       <Layout />
-      <div className="blog-post-container">
+      <div className="blog-post-container animated fadeInLeft">
         <h1>API Reference</h1>
         <div className="blog-post-content">
           <p>
