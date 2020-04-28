@@ -1,16 +1,18 @@
 import React from "react"
+import { graphql } from "gatsby"
+// import Img from 'gatsby-image'
 import Layout from "../components/Layout"
-import comparison1 from '../images/comparison1.png'
-import comparison1output from '../images/comparison1output.png'
-import comparison2 from '../images/comparison2.png'
+
+import comparison1 from "../images/comparison1.png"
+import comparison1output from "../images/comparison1output.png"
+import comparison2 from "../images/comparison2.png"
 import comparison2output from "../images/comparison2output.png"
-import comparison3 from '../images/comparison3.png'
-import comparison3output from '../images/comparison3output.png'
+import comparison3 from "../images/comparison3.png"
+import comparison3output from "../images/comparison3output.png"
 import distance1 from "../images/distance1.png"
 import distance1output from "../images/distance1output.png"
 
-
-const Api = () => {
+const Api = ({ data }) => {
   return (
     <>
       <Layout />
@@ -18,12 +20,12 @@ const Api = () => {
         <h1>API Reference</h1>
         <div className="blog-post-content">
           <p>
-            This page gives an overview of all PDBTools objects, functions and
-            methods. All classes and functions exposed in *PDBTools*.
+            This page gives an overview of all CDSTools objects, functions and
+            methods. All classes and functions exposed in *CDSTools*.
           </p>
           <p>
-            PDBTools has its own functions to start computations, compare, and
-            analyze data. These general PDBTool functions are described below:
+            CDSTools has its own functions to start computations, compare, and
+            analyze data. These general CDSTool functions are described below:
           </p>
           <div className="functionTable">
             <table className="table table-striped table-bordered">
@@ -97,7 +99,6 @@ const Api = () => {
               src={comparison1}
               alt="comparison1"
             />
-            
             <img
               className="functionExampleImg"
               src={comparison1output}
@@ -215,8 +216,10 @@ const Api = () => {
             <span class="functionCall">
               <strong>filter_results</strong>(*args)
             </span>
-            <p>Filters the results returned after the amino acids have been
-            compared</p>
+            <p>
+              Filters the results returned after the amino acids have been
+              compared
+            </p>
             <strong>Parameters:</strong>{" "}
             <span class="objectParams">args:object</span>
             <p class="objectParamDef">
@@ -224,11 +227,24 @@ const Api = () => {
             </p>
             <h3>Examples</h3>
           </div>
-          <br/>
+          <br />
         </div>
       </div>
     </>
   )
 }
 
-export default Api;
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "comparison1.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+export default Api
